@@ -1,0 +1,12 @@
+.LogoutContainner{
+    margin-right: 50px;
+    display: flex;
+}
+.LogoutContainner button{
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 7px;
+      background-color: #FF5C5C;
+}

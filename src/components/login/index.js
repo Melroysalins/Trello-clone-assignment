@@ -2,8 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import LoginButton from "../loginButton";
 import GoogleButton from "../googleButton";
+import CustomizedSnackbars from "../snackBar";
 
 const Login = ({ page, islogin, setIsLogin }) => {
+  const [firstname, setFirstName] = useState("");
+
+  const [lastname, setLastName] = useState("");
+
+  const [email, setEmail] = useState("");
+
+  const [password, setPassword] = useState("");
+
+  const [confirmpassword, setConfirmPassword] = useState("");
+
   useEffect(() => {
     if (page === "Login") {
       setIsLogin(true);
@@ -17,15 +28,49 @@ const Login = ({ page, islogin, setIsLogin }) => {
         <div className="formContainner">
           {!islogin && (
             <>
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
+              <input
+                type="text"
+                placeholder="First Name"
+                value={firstname}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                value={lastname}
+                onChange={(e) => setLastName(e.target.value)}
+              />
             </>
           )}
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          {!islogin && <input type="password" placeholder="Confirm Password" />}
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          {!islogin && (
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmpassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+          )}
         </div>
-        <LoginButton islogin={islogin} />
+        <LoginButton
+          islogin={islogin}
+          firstname={firstname}
+          lastname={lastname}
+          password={password}
+          confirmpassword={confirmpassword}
+          email={email}
+        />
         <div className="LoginSignUpMessage">
           {islogin ? (
             <>
