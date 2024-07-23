@@ -1,0 +1,17 @@
+.NavigationBar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+   padding: 10px;
+    background-color: #3273F5;
+}
+.assignmentIcon{
+    cursor: pointer;
+    color: white;
+}
+.loginSignupContainner{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
