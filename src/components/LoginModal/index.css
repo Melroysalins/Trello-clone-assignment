@@ -1,0 +1,40 @@
+.LoginContainner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   margin-top: 20px;
+}
+.LoginMainContainner{
+    margin-top: 2px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+.LoginMainContainner h4{
+    font-size: 26px;
+    cursor: pointer;
+    color:  #3273F5;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.LoginSignUpMessage{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 7px;
+    gap: 3px;
+}
+.LoginSignUpMessage p{
+    cursor: pointer;
+    font-weight: bold ;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.LoginSignUpMessage span{
+     color:  #3273F5;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

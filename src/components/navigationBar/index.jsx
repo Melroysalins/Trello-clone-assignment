@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import AssignmentIcon from "@mui/icons-material/Assignment";
-import LoginMessage from "../login";
+import LoginMessage from "../loginMessage";
 
 const NavigationBar = () => {
   const [selectedinfo, setSelectedInfo] = useState("");
