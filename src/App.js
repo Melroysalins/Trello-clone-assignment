@@ -11,6 +11,7 @@ import {
 import NavigationBar from "./components/navigationBar";
 import Login from "./components/Login";
 import LoginModal from "./components/LoginModal";
+import TaskBoard from "./components/taskBoard";
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<HomePage />}>
+            <Route index element={<TaskBoard />} />
             <Route path="login" element={<LoginModal />} />
             <Route path="SignUp" element={<LoginModal />} />
+            <Route path="taskboard" element={<TaskBoard />} />
           </Route>
         </Routes>
       </BrowserRouter>

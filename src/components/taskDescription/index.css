@@ -1,0 +1,11 @@
+.TaskDescription{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4px;
+}
+.TaskDescription p{
+    color:  #696868;
+    font-size: 12px;
+}

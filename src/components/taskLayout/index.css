@@ -1,0 +1,10 @@
+.TaskLayoutContainner{
+    max-width: 430px;
+    width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 520px;
+    overflow-y: scroll;
+}

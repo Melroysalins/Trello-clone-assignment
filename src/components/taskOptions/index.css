@@ -1,0 +1,35 @@
+.TaskOptionsContainner{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 15px;
+    gap: 10px;
+}
+.TaskOptionsContainner button{
+    cursor: pointer;
+}
+
+.delete{
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #FF5C5C;
+}
+.edit{
+     padding: 7px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #5e89e0;
+}
+.viewDetails{
+     padding: 7px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #3273F5;
+}

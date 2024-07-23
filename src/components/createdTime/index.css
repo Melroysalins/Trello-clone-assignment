@@ -1,0 +1,23 @@
+.CreatedTimeContainner{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 23px;
+    gap: 4px;
+}
+.CreatedDate{
+    display: flex;
+    align-items: center;
+}
+.CreatedDate p{
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+
+.createdTime{
+     font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}

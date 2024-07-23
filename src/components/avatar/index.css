@@ -1,0 +1,11 @@
+.AvatarComponent{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.SelectOption{
+    display: flex;
+    align-items: center;
+}
+.SelectOption select{
+    padding: 4px;
+    border-radius: 5px;
+    width: 90px;
+    outline: none;
+    border: 1px solid rgb(215, 212, 212);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

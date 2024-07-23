@@ -1,0 +1,10 @@
+.TaskCard{
+    margin-top: 18px;
+    cursor: pointer;
+    background-color: #D0E7FF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    border-radius: 8px;
+}

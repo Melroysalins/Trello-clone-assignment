@@ -1,0 +1,9 @@
+.TaskHeading{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+.TaskHeading p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
