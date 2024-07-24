@@ -37,8 +37,6 @@ export default function TaskModal({ open, setOpen, isoption, data, isEdit }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  console.log("Editttt->", data);
-
   React.useEffect(() => {
     if (isEdit) {
       setTaskHeading(data?.taskheading);

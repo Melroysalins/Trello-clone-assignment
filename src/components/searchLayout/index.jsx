@@ -3,7 +3,7 @@ import "./index.css";
 import Search from "../search";
 import SelectOption from "../selectOption";
 
-const SearchLayout = () => {
+const SearchLayout = ({ filter, setFilter }) => {
   return (
     <div className="SearchLayoutSection">
       <div className="SearchSection">
@@ -12,7 +12,7 @@ const SearchLayout = () => {
       </div>
       <div className="SearchSection">
         <span>Sort By :</span>
-        <SelectOption />
+        <SelectOption filter={filter} setFilter={setFilter} />
       </div>
     </div>
   );

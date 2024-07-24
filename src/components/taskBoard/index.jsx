@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import AddTask from "../addTask";
 import SearchLayout from "../searchLayout";
 import TaskLayouts from "../taskLayout";
 import { useSelector } from "react-redux";
+import FilterLayout from "../filterLayout";
 
 const TaskBoard = () => {
+  const [filter, setFilter] = useState(false);
   const taskSelector = useSelector((store) => store?.task?.task);
 
   const todoTasks = taskSelector.filter((task) => task.status === "TODO");
@@ -17,12 +19,15 @@ const TaskBoard = () => {
   return (
     <div className="TaskBoard">
       <AddTask />
-      <SearchLayout />
-      <div className="TaskLayout">
-        <TaskLayouts title={"TODO"} data={todoTasks} />
-        <TaskLayouts title={"PROGRESS"} data={progressTasks} />
-        <TaskLayouts title={"DONE"} data={doneTasks} />
-      </div>
+      <SearchLayout setFilter={setFilter} filter={filter} />
+      {!filter && (
+        <div className="TaskLayout">
+          <TaskLayouts title={"TODO"} data={todoTasks} />
+          <TaskLayouts title={"PROGRESS"} data={progressTasks} />
+          <TaskLayouts title={"DONE"} data={doneTasks} />
+        </div>
+      )}
+      {filter && <FilterLayout filter={filter} setFilter={setFilter} />}
     </div>
   );
 };
