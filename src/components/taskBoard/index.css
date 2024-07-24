@@ -13,6 +13,17 @@
     grid-template-columns: repeat(3,1fr);
     row-gap: 20px;
     column-gap: 20px;
-   
     padding: 10px;
+}
+
+@media(max-width:822px){
+    .TaskLayout{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:520px){
+    .TaskLayout{
+        grid-template-columns: repeat(1,1fr);
+    }
 }

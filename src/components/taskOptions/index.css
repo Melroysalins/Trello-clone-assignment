@@ -33,3 +33,63 @@
     color: white;
     background-color: #3273F5;
 }
+
+@media(max-width:960px){
+    .delete{
+    padding: 4px;
+    font-size: 11px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #FF5C5C;
+}
+.viewDetails{
+      padding: 4px;
+    font-size: 11px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #3273F5;
+}
+.edit{
+     padding: 4px;
+    font-size: 11px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #5e89e0;
+}
+}
+
+@media(max-width:600px){
+    .delete{
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #FF5C5C;
+}
+.viewDetails{
+      padding: 3px;
+    font-size: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #3273F5;
+}
+.edit{
+     padding: 3px;
+    font-size: 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #5e89e0;
+}
+}

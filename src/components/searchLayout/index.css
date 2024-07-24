@@ -14,3 +14,12 @@
     gap: 6px;
     
 }
+
+@media(max-width:490px){
+    .SearchLayoutSection{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}

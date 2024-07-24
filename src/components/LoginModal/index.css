@@ -38,3 +38,14 @@
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
+@media(max-width:420px){
+    .LoginContainner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   margin-top: 20px;
+   padding: 20px;
+}
+}

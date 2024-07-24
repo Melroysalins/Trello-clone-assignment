@@ -6,8 +6,11 @@ import CreatedTime from "../createdTime";
 import TaskOptions from "../taskOptions";
 
 const TaskCard = ({ info }) => {
+  const handleDragCard = (data) => {
+    console.log("drag called");
+  };
   return (
-    <div className="TaskCard">
+    <div className="TaskCard" draggable onDragStart={(e) => handleDragCard(e)}>
       <TaskHeading title={info?.taskheading} />
       <TaskDescription description={info?.description} />
       <CreatedTime time={info?.createdAt} />

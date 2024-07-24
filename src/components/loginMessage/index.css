@@ -14,3 +14,12 @@
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
 }
+
+@media(max-width:430px){
+    .selected{
+        font-size: 12px;
+    }
+    .LoginSignupDiv p{
+        font-size: 14px;
+    }
+}

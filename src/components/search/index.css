@@ -9,3 +9,9 @@
     outline: none;
     border-radius: 5px;
 }
+
+@media(max-width : 590px){
+    .SearchContainner input{
+        width: 190px;
+    }
+}

@@ -10,3 +10,15 @@
     border-radius: 7px;
       background-color: #FF5C5C;
 }
+
+@media(max-width:500px){
+    .LogoutContainner button{
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 7px;
+      background-color: #FF5C5C;
+}
+
+}
