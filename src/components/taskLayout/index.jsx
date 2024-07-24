@@ -4,7 +4,6 @@ import LayoutHeading from "../layoutHeading";
 import TaskCard from "../taskCard";
 
 const TaskLayouts = ({ title, data }) => {
-  console.log("title--->", title, " data----> ", data);
   return (
     <div className="TaskLayoutContainner">
       <LayoutHeading title={title} />

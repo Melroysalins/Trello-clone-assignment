@@ -1,0 +1,59 @@
+.TaskViewContainner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.TaskViewContainner h4{
+    font-size: 21px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    
+}
+.TaskHeading_Conatinner{
+    display: flex;
+ 
+    align-items: center;
+    gap: 4px;
+    margin-top: 20px;
+}
+.TaskDescription_Conatinner{
+    display: flex;
+ 
+    align-items: center;
+    gap: 4px;
+    margin-top: 15px;
+}
+.title{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.task{
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.description_name{
+     font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(86, 85, 85);
+}
+
+.Tasktime_Conatinner{
+    display: flex;
+}
+.CloseButton{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 180px;
+}
+.CloseButton button{
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+     background-color: #3273F5;
+     color: white;
+     font-family: sans-serif;
+}

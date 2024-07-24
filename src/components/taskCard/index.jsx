@@ -11,7 +11,7 @@ const TaskCard = ({ info }) => {
       <TaskHeading title={info?.taskheading} />
       <TaskDescription description={info?.description} />
       <CreatedTime time={info?.createdAt} />
-      <TaskOptions />
+      <TaskOptions data={info} />
     </div>
   );
 };
