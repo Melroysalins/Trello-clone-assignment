@@ -10,6 +10,8 @@ import { signupUser } from "../../services/signup.api";
 import { useDispatch } from "react-redux";
 import { addUserInfo } from "../../store/loginSlice";
 import { useNavigate } from "react-router";
+import { getAllTaskList } from "../../services/getTaskList";
+import { addUserTask } from "../../store/taskSlice";
 
 const LoginButton = ({
   islogin,
@@ -46,6 +48,14 @@ const LoginButton = ({
       dispatch(addUserInfo(result?.userInfo));
 
       navigate("/");
+
+      if (result?.status === 200) {
+        const result = await getAllTaskList();
+
+        if (result?.status === 200) {
+          dispatch(addUserTask(result?.taskList));
+        }
+      }
     }
   };
 

@@ -27,6 +27,21 @@ const style = {
   p: 4,
 };
 
+const style2 = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: " 100%",
+  height: "100%",
+  borderRadius: "8px",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  display: "flex",
+  flexDirection: "column",
+  p: 4,
+};
+
 export default function TaskModal({ open, setOpen, isoption, data, isEdit }) {
   const [taskheading, setTaskHeading] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -90,7 +105,7 @@ export default function TaskModal({ open, setOpen, isoption, data, isEdit }) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} tabIndex={-1}>
+        <Box sx={window.innerWidth <= 560 ? style2 : style} tabIndex={-1}>
           {!isoption ? (
             <>
               <Typography

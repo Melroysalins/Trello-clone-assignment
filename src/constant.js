@@ -1,1 +1,1 @@
-export const Base_url = "http://localhost:4000/api";
+export const Base_url = "https://voosh-backendcode-0574.onrender.com/api";
