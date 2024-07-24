@@ -8,7 +8,7 @@ const SearchLayout = ({ filter, setFilter }) => {
     <div className="SearchLayoutSection">
       <div className="SearchSection">
         <span>Search :</span>
-        <Search />
+        <Search filter={filter} setFilter={setFilter} />
       </div>
       <div className="SearchSection">
         <span>Sort By :</span>
