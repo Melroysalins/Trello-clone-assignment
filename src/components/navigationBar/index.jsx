@@ -9,6 +9,8 @@ import { getUser } from "../../services/getUser.api";
 import { useDispatch, useSelector } from "react-redux";
 import { addUserInfo } from "../../store/loginSlice";
 import LogOut from "../logout";
+import { getAllTaskList } from "../../services/getTaskList";
+import { addUserTask } from "../../store/taskSlice";
 
 const NavigationBar = () => {
   const [selectedinfo, setSelectedInfo] = useState("");
@@ -32,8 +34,17 @@ const NavigationBar = () => {
     }
   };
 
+  const getTaskList = async () => {
+    const result = await getAllTaskList();
+
+    if (result?.status === 200) {
+      dispatch(addUserTask(result?.taskList));
+    }
+  };
+
   useEffect(() => {
     getUserInfo();
+    getTaskList();
   }, []);
 
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
 
-const TaskHeading = () => {
+const TaskHeading = ({ title }) => {
   return (
     <div className="TaskHeading">
-      <p>Task 1</p>
+      <p>{title}</p>
     </div>
   );
 };

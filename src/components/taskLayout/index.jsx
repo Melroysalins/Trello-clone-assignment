@@ -3,14 +3,12 @@ import "./index.css";
 import LayoutHeading from "../layoutHeading";
 import TaskCard from "../taskCard";
 
-const TaskLayouts = () => {
+const TaskLayouts = ({ title, data }) => {
+  console.log("title--->", title, " data----> ", data);
   return (
     <div className="TaskLayoutContainner">
-      <LayoutHeading />
-      <TaskCard />
-      <TaskCard />
-      <TaskCard />
-      <TaskCard />
+      <LayoutHeading title={title} />
+      {data && data?.map((ele) => <TaskCard key={ele?._id} info={ele} />)}
     </div>
   );
 };

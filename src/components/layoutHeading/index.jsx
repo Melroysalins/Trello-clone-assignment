@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 
-const LayoutHeading = () => {
-  return <div className="LayoutHeading">TODO</div>;
+const LayoutHeading = ({ title }) => {
+  return <div className="LayoutHeading">{title}</div>;
 };
 
 export default LayoutHeading;

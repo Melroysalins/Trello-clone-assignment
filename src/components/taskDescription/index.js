@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
 
-const TaskDescription = () => {
+const TaskDescription = ({ description }) => {
   return (
     <div className="TaskDescription">
-      <p>Description 3</p>
+      <p>{description}</p>
     </div>
   );
 };
